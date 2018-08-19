@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="sp" fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="548.0" prefWidth="309.0" stylesheets="@menuStyle.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+    <children>
+        <Button id="create" fx:id="addRoom2" contentDisplay="TOP" layoutX="12.0" layoutY="130.0" mnemonicParsing="false"
+                onAction="#createRoom" prefHeight="51.0" prefWidth="290.0" stylesheets="@menuStyle.css"
+                text="Create new server"/>
+        <Label id="maze" fx:id="mm" layoutX="90.0" layoutY="15.0" prefHeight="76.0" prefWidth="148.0"
+               stylesheets="@menuStyle.css" text="Maze">
+            <font>
+                <Font name="Shonar Bangla" size="77.0"/>
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#46a805"/>
+                        <Stop color="BLACK" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+            <effect>
+                <DropShadow color="#00ff0d" height="19.9" radius="38.5475" spread="0.83" width="166.29"/>
+            </effect>
+        </Label>
+        <Button id="closebutton" fx:id="close" onAction="#closeApp" alignment="TOP_RIGHT" contentDisplay="RIGHT"
+                mnemonicParsing="false" prefHeight="10.0" prefWidth="48.0" stylesheets="@menuStyle.css" text="X"
+                textFill="WHITE" textOverrun="CLIP" translateX="259.0" translateY="2.0" StackPane.alignment="TOP_RIGHT">
+            <StackPane.margin>
+                <Insets right="3.0" top="3.0"/>
+            </StackPane.margin>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+            <effect>
+                <Glow/>
+            </effect>
+        </Button>
+        <Label id="author" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="150.0" layoutY="520.0"
+               prefHeight="25.0" prefWidth="148.0" stylesheets="@menuStyle.css" text="Author: Grzegorz Piłat"/>
+        <ScrollPane id="asd" fitToWidth="true" layoutX="-1.0" layoutY="274.0" prefWidth="303.0">
+            <content>
+                <VBox id="vb" fx:id="vb" prefHeight="172.0" prefWidth="301.0" stylesheets="@menuStyle.css">
+                    <opaqueInsets>
+                        <Insets bottom="5.0" top="5.0"/>
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="5.0" top="5.0"/>
+                    </padding>
+                </VBox>
+            </content>
+            <padding>
+                <Insets left="10.0"/>
+            </padding>
+        </ScrollPane>
+        <Button id="create" fx:id="toplist" contentDisplay="TOP" layoutX="12.0" layoutY="194.0" mnemonicParsing="false"
+                onAction="#topList" prefHeight="51.0" prefWidth="290.0" stylesheets="@menuStyle.css" text="Top List"/>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+#create {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#author {
+    -fx-border-color: white;
+    -fx-border-image-width: 2;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+#vb {
+    -fx-border-color: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+#sp{
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-color:
+            linear-gradient(#1d1d1d 0%, #1d1d1d 25%, #1d1d1d 85%, #C59237 100%),
+            linear-gradient(#1d1d1d, #3a3a3a),
+            linear-gradient(#1d1d1d 0%, #1d1d1d 20%, #1d1d1d 92%, #C59237 100%),
+            linear-gradient(#1d1d1d 0%, #1d1d1d 20%, #1d1d1d 92%, #C59237 100%);
+    -fx-background-radius: 9,8,5,4;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 9pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#maze{
+    -fx-border: none;
+    -fx-font: normal 48px/normal Arial, Helvetica, sans-serif;
+    -fx-color: rgba(255, 255, 255, 1);
+}
+
+#create:hover{
+-fx-background-color:rgba(50,50,50,1);
+}
+
+#closebutton {
+    -fx-background-color: linear-gradient(#C0C0C0, #606060);
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+#asd{
+    -fx-background-color: null;
+}

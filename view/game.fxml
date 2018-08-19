@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="ap" prefHeight="596.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane fx:id="pan" prefHeight="200.0" prefWidth="200.0"/>
+        <Pane fx:id="pane" prefHeight="596.0" prefWidth="596.0">
+            <children>
+                <Label id="lab" fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="616.0"
+                       prefWidth="616.0" stylesheets="@gameStyle.css" text="Please wait for other players..."
+                       textAlignment="CENTER"/>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
