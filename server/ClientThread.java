@@ -1,9 +1,9 @@
 package server;
 
-import dao.Database;
-import dao.Player;
-import dao.Result;
-import dao.Utils;
+import models.Database;
+import models.Player;
+import models.Result;
+import models.Utils;
 import javafx.application.Platform;
 
 import java.io.*;

@@ -3,7 +3,7 @@ package controllers;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import server.Packet;
-import dao.Result;
+import models.Result;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

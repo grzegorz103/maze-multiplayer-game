@@ -1,9 +1,9 @@
 package controllers;
 
 import server.Packet;
-import dao.GenerateMap;
-import dao.Player;
-import dao.Utils;
+import models.GenerateMap;
+import models.Player;
+import models.Utils;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

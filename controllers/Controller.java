@@ -1,7 +1,7 @@
 package controllers;
 
 import server.Packet;
-import dao.Utils;
+import models.Utils;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

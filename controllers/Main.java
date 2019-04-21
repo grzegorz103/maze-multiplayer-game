@@ -19,30 +19,35 @@ public class Main extends Application
          * @throws Exception Uruchamia główne okno programu
          */
         @Override
-        public void start(Stage primaryStage) throws Exception
+        public void start ( Stage primaryStage ) throws Exception
         {
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(this.getClass().getResource("/view/menu.fxml"));
-                primaryStage.setOnCloseRequest((e) -> {
+                loader.setLocation( this.getClass().getResource( "/view/menu.fxml" ) );
+                primaryStage.setOnCloseRequest( ( e ) -> {
                         Platform.exit();
-                        System.exit(0);
-                });
-                TextInputDialog dialog = new TextInputDialog("Nick");
-                dialog.setTitle("Welcome");
-                dialog.setHeaderText("Welcome in Maze Game");
-                dialog.setContentText("Please enter your nick:");
+                        System.exit( 0 );
+                } );
 
-                Optional<String> result = dialog.showAndWait();
-                result.ifPresent(s -> Controller.nick = s);
+                do
+                {
+                        TextInputDialog dialog = new TextInputDialog( "Nick" );
+                        dialog.setTitle( "Welcome" );
+                        dialog.setHeaderText( "Welcome in Maze Game" );
+                        dialog.setContentText( "Please enter your nick:" );
+
+                        Optional<String> result = dialog.showAndWait();
+                        result.ifPresent( s -> Controller.nick = s );
+                } while ( Controller.nick.trim().length() == 0 );
+
                 AnchorPane stackPane = loader.load();
-                primaryStage.initStyle(StageStyle.TRANSPARENT);
-                Scene scene = new Scene(stackPane);
-                primaryStage.setScene(scene);
+                primaryStage.initStyle( StageStyle.TRANSPARENT );
+                Scene scene = new Scene( stackPane );
+                primaryStage.setScene( scene );
                 primaryStage.show();
         }
 
-        public static void main(String[] args)
+        public static void main ( String[] args )
         {
-                launch(args);
+                launch( args );
         }
 }
